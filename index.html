@@ -10,27 +10,28 @@
 <body>
   <div class="container">
   <section class="slideshow-container">
-    <div class="mySlides fade">
+    <!-- <div class="mySlides fade">
       <img src="images/books.jpg">
     </div>
     <div class="mySlides fade">
       <img src="images/Dark academia aesthetic.jpg">
-    </div>
-    <div class="mySlides fade">
+    </div> -->
+    <!-- <div class="mySlides fade">
       <img src="images/img2.jpg">
-    </div>
-    <div class="mySlides fade">
+    </div> -->
+    <!-- <div class="mySlides fade">
       <img src="images/img3.jpg">
     </div>
     <div class="mySlides fade">
       <img src="images/Library Animation Background.jpg">
-    </div>
+    </div> -->
     
   </section>
- <div class="overlay"></div>
-  <section class="form-section">
+ <!-- <div class="overlay"></div> -->
+ <section class="form-section">
+  <div>
     <form method="post" action="/form-handling-url">
-      <div>
+      <fieldset>
         <legend>Add User</legend>
 
         <div>
@@ -49,17 +50,20 @@
           <label for="age">Age</label>
           <input type="date" id="age" name="age">
         </div>
-        <fieldset>
-    <legend>Gender</legend>
-          <input type="radio" id="gender" name="gender" value="male">Male
-          <input type="radio" id="gender" name="gender" value="female">Female
-          <input type="radio" id="gender" name="gender" value="other">Other
-        </fieldset>
-
+        <div>
+          <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="gender_male" name="gender" value="male">
+            <label for="gender_male">Male</label>
+            <input type="radio" id="gender_female" name="gender" value="female">
+            <label for="gender_female">Female</label>
+            <input type="radio" id="gender_other" name="gender" value="other">
+            <label for="gender_other">Other</label>
+          </fieldset>
+        </div>
         <div>
           <label for="subjects">Subjects</label>
-          <select name="subjects[]" multiple>
-            <option value=""></option>
+          <select name="subjects[]" id="subjects" multiple>
             <option value="math">Math</option>
             <option value="english">English</option>
             <option value="science">Science</option>
@@ -72,23 +76,24 @@
         <div>
           <label for="password">Password</label>
           <input type="password" id="password" name="password">
-         </div>
+        </div>
 
-         <div>
-          <input type="hidden" name="session_id" value="your_session_id">
-         </div>
+        <input type="hidden" name="session_id" value="your_session_id">
 
-         <div>
+        <div>
           <input type="submit" value="Register">
           <input type="reset" value="Cancel">
-         </div>
-
-
-      </div>
-
+        </div>
+      </fieldset>
     </form>
-  </section>
   </div>
+</section>
+
+  </div>
+  <footer>
+   
+    <a href="/help-support">Help & Support</a>
+</footer>
 </body>
 </html>
 

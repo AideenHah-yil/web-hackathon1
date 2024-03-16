@@ -1,74 +1,51 @@
 body, html {
     margin: 0;
     padding: 0;
-  }
-  
-  .container {
-    position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  .slideshow-container {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  .mySlides {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-  }
-  .mySlides.fade {
-    opacity: 1;
-  }
-  @keyframes slide {
-    0% {left: 0;}
-    100% {left: -100%;}
-  }
-  .mySlides.fade:first-child {
-    animation: slide 8s infinite;
-  }
-  
-  
-  
-  .overlay {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideshow 60s infinite; /* Adjust duration and timing as needed */
+}
+
+@keyframes slideshow {
+    0% { background-image: url('images/books.jpg'); }
+    33.33% { background-image: url('images/img2.jpg'); }
+    66.67% { background-image: url('images/img3.jpg'); }
+    100% { background-image: url('images/Library Animation Background.jpg'); }
+}
+
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency here */
-  }
-  
-  .form-section {
-    position: absolute;
+}
+
+.form-section {
+    position: absolute;   
     top: 50%;
-    right: 0; /* Position the form on the right side */
-    width: 40%; /* Make the form cover half of the page */
+    left: 50%; /* Position the form at the center horizontally*/
+    width: 40%; /* Make the form cover 40% of the page */
     height: 80%; 
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%); /* center form vertically and horizontally */
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.3); /* Adjust the transparency by changing the last value (0.3 for 30% opaque) */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the transparency by changing the last value (0.3 for 30% opaque) */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
-  }
+}
 
-  .form-section label,
-  .form-section input,
-  .form-section select {
+.form-section label,
+.form-section input,
+.form-section select {
     display: block;
-   margin-bottom: 2px;
+    margin-bottom: 2px;
     padding: 2px;
     font-size: 15px;
     color: #020202;
-  }
-  
-  
-  
+}
