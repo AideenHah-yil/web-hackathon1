@@ -14,7 +14,7 @@
  
   <section>
     <form method="post" action="/form-handling-url">
-      <fieldset>
+      <div>
         <legend>Add User</legend>
 
         <div>
@@ -40,7 +40,26 @@
           <input type="radio" id="gender" name="gender" value="other">Other
         </fieldset>
 
-      </fieldset>
+        <div>
+          <label for="subjects">Subjects</label>
+          <select id="subject" name="subject_name">
+            <option value="math">Math</option>
+            <option value="english">English</option>
+            <option value="science">Science</option>
+            <option value="art">Art and Craft</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+          </select>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+         </div>
+         
+
+
+      </div>
 
     </form>
   </section>
