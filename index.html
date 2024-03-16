@@ -8,11 +8,27 @@
   <title>Level 1 Hackathon</title>
 </head>
 <body>
-  <section class="video">
-    <video src="path to video" type="video/mp4" ></video>
+  <div class="container">
+  <section class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/books.jpg">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/Dark academia aesthetic.jpg">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/img2.jpg">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/img3.jpg">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/Library Animation Background.jpg">
+    </div>
+    
   </section>
- 
-  <section>
+ <div class="overlay"></div>
+  <section class="form-section">
     <form method="post" action="/form-handling-url">
       <div>
         <legend>Add User</legend>
@@ -34,7 +50,7 @@
           <input type="date" id="age" name="age">
         </div>
         <fieldset>
-          <label for="gender">Gender</label>
+    <legend>Gender</legend>
           <input type="radio" id="gender" name="gender" value="male">Male
           <input type="radio" id="gender" name="gender" value="female">Female
           <input type="radio" id="gender" name="gender" value="other">Other
@@ -72,7 +88,7 @@
 
     </form>
   </section>
-
+  </div>
 </body>
 </html>
 
