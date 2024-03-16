@@ -9,13 +9,23 @@ body, html {
     animation: slideshow 60s infinite; /* Adjust duration and timing as needed */
 }
 
+
 @keyframes slideshow {
     0% { background-image: url('images/books.jpg'); }
     33.33% { background-image: url('images/img2.jpg'); }
     66.67% { background-image: url('images/img3.jpg'); }
     100% { background-image: url('images/Library Animation Background.jpg'); }
 }
-
+/* Adjusted styles for the slideshow images */
+.mySlides {
+    display: none; /* Ensure all slides are initially hidden */
+}
+.mySlides img {
+    width: 500px; /* Set width to 500px */
+    height: 500px; /* Set height to 500px */
+    border: 2px solid green; /* Add a green border */
+    box-sizing: border-box; /* Ensure border size is included in the dimensions */
+}
 
 .overlay {
     position: absolute;
@@ -48,4 +58,25 @@ body, html {
     padding: 2px;
     font-size: 15px;
     color: #020202;
+}
+
+
+.support {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    color: #333;
+}
+.sectioninfo {
+    margin-bottom: 30px;
+}
+.sectioninfo h2 {
+    color: #666;
+}
+.sectioninfo p {
+    margin-bottom: 10px;
+}
+.color {
+    color: #0707e4;
 }
