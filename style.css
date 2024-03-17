@@ -6,7 +6,7 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: slideshow 60s infinite; /* Adjust duration and timing as needed */
+    animation: slideshow 60s infinite; 
 }
 
 
@@ -16,17 +16,10 @@ body, html {
     66.67% { background-image: url('images/img3.jpg'); }
     100% { background-image: url('images/Library Animation Background.jpg'); }
 }
-/* Adjusted styles for the slideshow images */
-.mySlides {
-    display: none; /* Ensure all slides are initially hidden */
-}
-.mySlides img {
-    width: 500px; /* Set width to 500px */
-    height: 500px; /* Set height to 500px */
-    border: 2px solid green; /* Add a green border */
-    box-sizing: border-box; /* Ensure border size is included in the dimensions */
-}
 
+.mySlides {
+    display: none; 
+}
 .overlay {
     position: absolute;
     top: 0;
